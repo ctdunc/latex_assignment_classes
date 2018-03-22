@@ -26,15 +26,20 @@
 \newcommand*{\studentid}[1]{\gdef\@studentid{#1}%
 }
 \newcommand*{\@studentid}{}
+\newcommand*{\problemset}[1]{\gdef{\@problemset{#1}%
+}
+\newcommand*{\@problemset}{}
+\renewcommand*{\@title}{\gdef\@title{\@class---\@problemset}%
+}
 
 \renewcommand*{\maketitle}{%
-\noindent\rule{\textwidth}{3pt}
 \begin{center}
+\noindent\rule{\textwidth}{3pt}
 {\LARGE\@title\par}
 {\large\@author \par}
 {\normalsize \@date}
-\end{center}
 \noindent\rule{\textwidth}{3pt}
+\end{center}
 }
 
 \newcommand*{\epn}{%
