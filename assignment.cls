@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{physicshw}[2017/03/21 Custom LaTeX class for typsetting physics problem sets]
+\ProvidesClass{physicshw}[4/4/2018 Custom LaTeX class for typsetting assignments by Connor Duncan]
 
 \LoadClass[9pt]{article}
 \RequirePackage[letterpaper, margin=0.75in]{geometry}
